@@ -1,0 +1,26 @@
+SUMMARY:
+
+
+
+CONTRIBUTORS: Shellena Chen & Lang Wang
+
+LINK TO GITHUB REPOSITORY: https://github.com/UPenn-CIT599/final-project-team-77_hrdata
+
+WORK BREAKDOWN:
+
+Shellena Chen wrote:
+- PredictPayRate.java
+- PredictPayRateTest.java
+- ProjectRunner.java
+
+
+Lang Wang wrote:
+- Data.java
+- DataTest.java
+- Graphs.java
+
+
+Both contributed to:
+- README on Github
+- summary.txt
+- PowerPoint slide deck for presentation

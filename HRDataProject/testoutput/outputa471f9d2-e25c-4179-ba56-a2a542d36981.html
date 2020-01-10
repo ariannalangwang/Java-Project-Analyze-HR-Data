@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pay Rate Based on Citizenship Status</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Pay Rate Based on Citizenship Status',
+    height: 600,
+    width: 800,
+
+
+};
+
+var trace0 =
+{
+x: ['US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Non-Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Non-Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Non-Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Eligible NonCitizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','Non-Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen','US Citizen'],
+y: [28.5, 23.0, 29.0, 21.5, 16.56, 20.5, 55.0, 55.0, 55.0, 56.0, 55.5, 55.0, 55.5, 55.0, 55.0, 55.0, 55.0, 54.0, 55.0, 56.0, 55.0, 55.0, 55.0, 55.0, 56.0, 55.0, 56.0, 55.0, 55.0, 57.0, 55.0, 55.0, 55.0, 45.0, 46.0, 45.0, 45.0, 63.5, 65.0, 55.0, 43.0, 48.5, 40.1, 34.0, 40.0, 35.5, 41.0, 42.75, 39.55, 42.2, 45.0, 30.2, 31.4, 60.0, 60.0, 65.0, 62.0, 21.0, 63.0, 64.0, 28.99, 31.4, 26.0, 27.49, 45.0, 42.0, 37.0, 39.0, 43.0, 27.0, 47.0, 28.0, 49.1, 80.0, 54.5, 50.5, 55.0, 51.0, 54.0, 48.5, 42.0, 55.0, 53.0, 38.5, 52.0, 53.0, 55.0, 33.5, 23.0, 16.0, 21.0, 20.0, 18.0, 16.0, 20.0, 24.0, 15.0, 22.0, 22.0, 24.0, 15.0, 20.0, 21.0, 22.0, 16.0, 24.75, 22.0, 24.0, 16.0, 16.0, 21.0, 23.0, 15.0, 18.0, 17.0, 16.0, 24.0, 22.0, 17.0, 20.0, 15.0, 16.75, 19.0, 15.0, 20.0, 17.0, 20.0, 19.0, 17.0, 17.0, 21.0, 22.0, 15.0, 21.0, 22.0, 19.5, 15.0, 18.0, 22.0, 21.0, 21.0, 20.0, 15.0, 18.0, 20.0, 21.0, 14.0, 15.0, 16.76, 20.0, 15.75, 21.25, 21.0, 24.0, 14.0, 19.0, 15.0, 14.0, 16.0, 16.0, 20.0, 22.0, 21.0, 22.0, 22.0, 22.0, 21.0, 23.0, 17.0, 19.0, 14.0, 17.0, 21.0, 17.0, 16.0, 24.5, 20.0, 16.0, 22.0, 20.0, 15.0, 17.0, 18.0, 24.0, 21.0, 19.0, 24.0, 18.5, 19.0, 16.0, 18.0, 14.0, 19.0, 20.0, 18.0, 16.0, 19.75, 17.0, 19.0, 24.0, 17.0, 19.0, 15.25, 20.0, 22.0, 21.0, 21.0, 19.0, 20.0, 16.0, 17.0, 22.0, 23.5, 20.0, 15.0, 19.75, 22.0, 19.0, 18.0, 24.0, 22.0, 15.2, 15.0, 23.0, 25.0, 29.0, 23.0, 23.0, 28.0, 22.0, 25.0, 29.0, 25.0, 25.0, 26.0, 29.0, 26.0, 24.25, 22.0, 27.0, 26.0, 22.0, 26.0, 27.0, 25.0, 26.1, 26.39, 22.0, 28.75, 27.0, 29.0, 24.0, 24.0, 22.0, 26.0, 29.0, 26.0, 24.0, 22.5, 26.0, 29.0, 22.0, 29.0, 25.0, 27.0, 28.0, 25.0, 22.0, 24.25, 27.0, 24.0, 28.0, 24.0, 29.0, 23.0, 22.0, 24.0, 28.0, 23.0, 25.0, 23.0, 54.0, 60.25, 56.0, 50.25, 52.25, 51.0, 55.0, 55.0, 47.6, 56.0, 57.12, 48.5, 55.51, 52.25, 49.25, 48.0, 45.42, 27.0, 34.95, 34.95, 62.0, 61.3, 58.2, 58.5, 54.1, 56.2, 53.8, 53.0, 55.2],
+xaxis: 'x',
+yaxis: 'y',
+type: 'box',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>
